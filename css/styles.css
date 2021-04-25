@@ -161,13 +161,7 @@ body {
 .contacts-icon {
   fill: currentColor;
   margin-right: 10px;
-  vertical-align: middle;
   }
-
-.contacts-item .link:hover .contacts-icon,
-.contacts-item .link:focus .contacts-icon {
-  fill: var(--accent-color);
-}
 
 /* Главный заголовок */
 .hero {
@@ -320,19 +314,24 @@ body {
   justify-content: space-between;
 }
 
-.products-item {
+.products-item-box {
   position: relative;
 }
 
-.products-item-title {
+.products-item-thumb {
   position: absolute;
-  left: 0;
   bottom: 0;
-  padding-top: 27px;
-  padding-bottom: 27px;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 100%;
   height: 70px;
   background: rgba(47, 48, 58, 0.8);
+}
+
+.products-item-title {
+
   font-family: Roboto;
   font-weight: 700;
   font-size: 14px;
@@ -340,7 +339,7 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 /* Наша команда */
